@@ -29,6 +29,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'ckeditor',
+    'ckeditor_uploader',
+    'cars.apps.CarsConfig',
+    'django.contrib.humanize',
     'pages.apps.PagesConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -124,3 +128,4 @@ STATICFILES_DIRS = [
 # Media settings
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+CKEDITOR_UPLOAD_PATH = "uploads/"
