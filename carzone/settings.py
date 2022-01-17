@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+SITE_ID = 1
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,13 +26,13 @@ SECRET_KEY = '--(c^w1i&e0bcwwiv5@!zs2+*4(j((+&&vovyov@08hn!8g@zx'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+LOGIN_REDIRECT_URL = 'dashboard'
 # Application definition
 INSTALLED_APPS = [
     'cars.apps.CarsConfig',
     'pages.apps.PagesConfig',
     'accounts.apps.AccountsConfig',
-    #'contacts.apps.ContactsConfig',
+    #'contacts.apps.ContactsConfig'
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
